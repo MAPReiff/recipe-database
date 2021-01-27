@@ -25,6 +25,16 @@
               <input type="text" name="recipeServings" class="form-control" placeholder="How many servings does the recipe make?"> 
             </div>
             <br>
+            Prep Time
+            <div class="form-group">
+              <input type="text" name="recipePrepTime" class="form-control" placeholder="How long will it take to prep? (ex: 1h 20m)"> 
+            </div>
+            <br>
+            Cook Time
+            <div class="form-group">
+              <input type="text" name="recipeCookTime" class="form-control" placeholder="How long will it take to cook? (ex: 1h 20m)"> 
+            </div>
+            <br>
             Recipe Ingredients
             <div class="form-group">
               <textarea name="recipeIngredients" class="form-control" style="min-height: 130px;" placeholder="Required ingredients (ex: 2x Onion)"></textarea>
@@ -32,8 +42,15 @@
             <br>
             Recipe Instructions
             <div class="form-group">
-              <textarea name="recipeInstructions" class="form-control" style="min-height: 130px;" placeholder="Format as you like"></textarea>
+              <textarea name="recipeInstructions" class="form-control" style="min-height: 130px;" placeholder="How do we make this? Format as you like"></textarea>
             </div>
+            <br>
+            Needed Equipment
+            <div class="form-group">
+              <textarea name="recipeEquipment" class="form-control" style="min-height: 130px;" placeholder="What hardware do we need to make this?"></textarea>
+            </div>
+            <br>
+
 
             <button type="submit" class="btn btn-success">Add to Database</button>
           </form>
