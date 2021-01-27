@@ -1,0 +1,48 @@
+body {
+	margin: 50px auto;
+	max-width:600px;
+	line-height:1.6;
+	font-size:18px;
+	background: #0f131b;
+	color: white;
+	font-family: sans-serif;
+}
+
+input,textarea {
+	background: #20293b;
+	width:500pt;
+	border: 10px solid;
+	border-color: #20293b;
+	font-size: 10pt;
+	color: white;
+}
+
+::placeholder {
+	color: white;
+	opacity: 1;
+}
+
+button {
+	background: #6691cb;
+	color: white;
+	border: 10px solid;
+	border-color: #6691cb;
+}
+
+h1 {
+	color: #8ce6ff;
+}
+
+h2 {
+	color: #d58ac7;
+	margin: 1pt;
+	font-size: 20pt;
+}
+
+a:link {
+	color: #de7290;
+}
+
+a:visited {
+	color: #9E6575;
+}
