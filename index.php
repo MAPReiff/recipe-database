@@ -13,7 +13,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<link href=simple.css rel=stylesheet>
+  <link href=simple.css rel=stylesheet>
+  <title>Recipe List</title>
   </head>
   <body>
     <div class="container" style="margin-bottom: 20px;">
