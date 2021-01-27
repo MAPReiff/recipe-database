@@ -14,7 +14,8 @@ input,textarea {
 	border: 10px solid;
 	border-color: #20293b;
 	font-size: 10pt;
-	color: white;
+  color: white;
+  white-space: pre-wrap;
 }
 
 ::placeholder {
@@ -52,3 +53,4 @@ a:link {
 a:visited {
 	color: #9E6575;
 }
+
