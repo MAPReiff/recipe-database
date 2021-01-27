@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen" />  
+  </head>
+  <body>
+    <div class="container" style="margin-bottom: 20px;">
+      <div class="row">
+        <div class="col-xs-6">
+          <form class="form-horizontal" id="frmRecipe" method="post" action="recipeGen.php">
+            <h1>Recipe Creation</h1>
+
+            Name of Recipe
+            <div class="form-group">
+              <input type="text" name="recipeName" class="form-control" placeholder="Name of Recipe"> 
+            </div>
+            <br>
+            Recipe Image
+            <div class="form-group">
+              <input type="text" name="recipeImage" class="form-control" placeholder="Link to recipe image"> 
+            </div>
+            <br>
+            Servings
+            <div class="form-group">
+              <input type="text" name="recipeServings" class="form-control" placeholder="How many servings does the recipe make?"> 
+            </div>
+            <br>
+            Recipe Ingredients
+            <div class="form-group">
+              <textarea name="recipeIngredients" class="form-control" style="min-height: 130px;" placeholder="Required ingredients (ex: 2x Onion)"></textarea>
+            </div>
+            <br>
+            Recipe Instructions
+            <div class="form-group">
+              <textarea name="recipeInstructions" class="form-control" style="min-height: 130px;" placeholder="Format as you like"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success">Add to Database</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+  
+  </body>
+
+</html>
