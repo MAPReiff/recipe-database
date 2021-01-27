@@ -22,7 +22,9 @@
             <h1>Recipe List</h1>
             <h2><a href="./recipeGen.html">Click Here To Add A Recipe</a></h2>
             <br>
-            <h2>Breakfast</hr>
+            <details>
+            <summary>Breakfast</summary>
+              <figure>
             <?php
               for ($b = 0; $b <= count($breakfastFiles); $b++){
                 if($breakfastFiles[$b]==""){
@@ -39,8 +41,12 @@
                 }
               }
             ?>
+            </figure>
+            </details>
             <br>
-            <h2>Lunch</hr>
+            <details>
+            <summary>Lunch</summary>
+            <figure>
             <?php
               for ($b = 0; $b <= count($lunchFiles); $b++){
                 if($lunchFiles[$b]==""){
@@ -57,8 +63,12 @@
                 }
               }
             ?>
+            </figure>
+            </details>
             <br>
-            <h2>Dinner</hr>
+            <details>
+            <summary>Dinner</summary>
+            <figure>
             <?php
               for ($b = 0; $b <= count($dinnerFiles); $b++){
                 if($dinnerFiles[$b]==""){
@@ -75,6 +85,8 @@
                 }
               }
             ?>
+            </figure>
+            </details>
         </div>
     </div>
   </div>

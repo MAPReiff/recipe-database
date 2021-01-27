@@ -39,6 +39,12 @@ h2 {
 	font-size: 20pt;
 }
 
+details > summary {
+	color: #d58ac7;
+	margin: 1pt;
+	font-size: 20pt;
+}
+
 a:link {
 	color: #de7290;
 }
