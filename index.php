@@ -1,12 +1,12 @@
 <?php
 
   $breakfastDir     =   './breakfast';
-  $lunchDir         =   './lunch';
-  $dinnerDir        =   './dinner';
+  $entreesDir         =   './entrees';
+  $sidesDir        =   './sides';
 
   $breakfastFiles   =   scandir($breakfastDir, 1);
-  $lunchFiles       =   scandir($lunchDir, 1);
-  $dinnerFiles      =   scandir($dinnerDir, 1);
+  $entreesFiles       =   scandir($entreesDir, 1);
+  $sidesFiles      =   scandir($sidesDir, 1);
 
 ?>
 
@@ -46,21 +46,21 @@
             </details>
             <br>
             <details>
-            <summary>Lunch</summary>
+            <summary>Entrées</summary>
             <figure>
             <?php
-              for ($b = 0; $b <= count($lunchFiles); $b++){
-                if($lunchFiles[$b]==""){
+              for ($b = 0; $b <= count($entreesFiles); $b++){
+                if($entreesFiles[$b]==""){
                 }
-                else if($lunchFiles[$b]=="."){
+                else if($entreesFiles[$b]=="."){
                 }
-                else if($lunchFiles[$b]==".."){
+                else if($entreesFiles[$b]==".."){
                 }
-                else if($lunchFiles[$b]==".html"){
+                else if($entreesFiles[$b]==".html"){
                 }
                 else{
-                  $mealName   =   preg_replace('/(?<!\ )[A-Z]/', ' $0', str_replace(".html", "", $lunchFiles[$b]));
-                  echo "<h3>&#8226; <a href='./lunch/" . $lunchFiles[$b] . "'>" . $mealName . "</a></h3>";
+                  $mealName   =   preg_replace('/(?<!\ )[A-Z]/', ' $0', str_replace(".html", "", $entreesFiles[$b]));
+                  echo "<h3>&#8226; <a href='./entrees/" . $entreesFiles[$b] . "'>" . $mealName . "</a></h3>";
                 }
               }
             ?>
@@ -68,21 +68,21 @@
             </details>
             <br>
             <details>
-            <summary>Dinner</summary>
+            <summary>Sides</summary>
             <figure>
             <?php
-              for ($b = 0; $b <= count($dinnerFiles); $b++){
-                if($dinnerFiles[$b]==""){
+              for ($b = 0; $b <= count($sidesFiles); $b++){
+                if($sidesFiles[$b]==""){
                 }
-                else if($dinnerFiles[$b]=="."){
+                else if($sidesFiles[$b]=="."){
                 }
-                else if($dinnerFiles[$b]==".."){
+                else if($sidesFiles[$b]==".."){
                 }
-                else if($dinnerFiles[$b]==".html"){
+                else if($sidesFiles[$b]==".html"){
                 }
                 else{
-                  $mealName   =   preg_replace('/(?<!\ )[A-Z]/', ' $0', str_replace(".html", "", $dinnerFiles[$b]));
-                  echo "<h3>&#8226; <a href='./dinner/" . $dinnerFiles[$b] . "'>" . $mealName . "</a></h3>";
+                  $mealName   =   preg_replace('/(?<!\ )[A-Z]/', ' $0', str_replace(".html", "", $sidesFiles[$b]));
+                  echo "<h3>&#8226; <a href='./sides/" . $sidesFiles[$b] . "'>" . $mealName . "</a></h3>";
                 }
               }
             ?>

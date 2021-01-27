@@ -15,13 +15,13 @@
     $recipeFileName     =   str_replace(' ', '', ucwords($recipeName));
     $recipeFile         =   './breakfast/' . $recipeFileName . '.html';   // ./breakfast/FriedChicken.html
   }
-  else if($recipeTimeOfDay=="Lunch"){
-    $recipeFileName     =   str_replace(' ', '', ucwords($recipeName));  // ./lunch/FriedChicken.html
-    $recipeFile         =   './lunch/' . $recipeFileName . '.html';
+  else if($recipeTimeOfDay=="Entree"){
+    $recipeFileName     =   str_replace(' ', '', ucwords($recipeName));  
+    $recipeFile         =   './entrees/' . $recipeFileName . '.html';    // ./entrees/FriedChicken.html
   }
-  else if($recipeTimeOfDay=="Dinner"){
-    $recipeFileName     =   str_replace(' ', '', ucwords($recipeName));  // ./dinner/FriedChicken.html
-    $recipeFile         =   './dinner/' . $recipeFileName . '.html';
+  else if($recipeTimeOfDay=="Side"){
+    $recipeFileName     =   str_replace(' ', '', ucwords($recipeName));
+    $recipeFile         =   './sides/' . $recipeFileName . '.html';     // ./sides/FriedChicken.html
   }
 
   // page template
