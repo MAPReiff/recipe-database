@@ -17,6 +17,10 @@
   <title>Recipe List</title>
   </head>
   <body>
+    <div class="topnav">
+      <a class="active" href="./index.php">Home</a>
+      <a href="./recipeGen.html">Recipe Generator</a>
+    </div>
     <div class="container" style="margin-bottom: 20px;">
       <div class="row">
         <div class="col-xs-6">

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen" /> -->  
-  <link href=simple.css rel=stylesheet>
+    <link href=simple.css rel=stylesheet>
   <title>Recipe Generator</title>
   </head>
   <body>
+    <div class="topnav">
+      <a href="./index.php">Home</a>
+      <a class="active" href="./recipeGen.html">Recipe Generator</a>
+    </div>
     <div class="container" style="margin-bottom: 20px;">
       <div class="row">
         <div class="col-xs-6">
           <form class="form-horizontal" id="frmRecipe" method="post" action="recipeGen.php">
             <h1>Recipe Creation</h1>
-
 			<h2>Name of Recipe</h2>
             <div class="form-group">
               <input type="text" name="recipeName" class="form-control" placeholder="Name of recipe"> 
